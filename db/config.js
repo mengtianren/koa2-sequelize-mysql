@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 
 const sequelize = new Sequelize('nodesql',  {
-    host : "127.0.0.1",
+    host : "119.23.60.174",
     port : 3306,
     dialect : 'mysql',  //声明数据库类型
     define : {
