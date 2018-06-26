@@ -18,10 +18,15 @@
 * -用户列表 GET : http://127.0.0.1:8081/api/v1/user/list  --params : 无  {只有用户登陆后，并且为管理员权限时候才能访问}
 * -用户详情 GET : http://127.0.0.1:8081/api/v1/user/detail  --params : {id}
 * -资料修改 POST : http://127.0.0.1:8081/api/v1/user/set  --params : {name, email, icon}{只有登录之后才能修改}
+* -用户退出 GET : http://127.0.0.1:8081/api/v1/user/loginout
+
+
 
 * -文章列表 GET : http://127.0.0.1:8081/api/v1/blog/list  --params : 无
 * -文章添加 POST : http://127.0.0.1:8081/api/v1/blog/add  --params : {title, content} {必须为登录后才能添加}
 * -文章详情 GET : http://127.0.0.1:8081/api/v1/blog/detail --params : {id}
+
+* -上传接口 POST : http://127.0.0.1:8081/upload  需要修改头部信息上传图片 --file 文件
 
 # 后续接口开发中。。。。。
 

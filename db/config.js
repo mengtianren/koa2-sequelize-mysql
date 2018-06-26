@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-const sequelize = new Sequelize('nodesql',  {
+const sequelize = new Sequelize('nodesql', 'root', '123456', {
     host : "119.23.60.174",
     port : 3306,
     dialect : 'mysql',  //声明数据库类型

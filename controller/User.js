@@ -3,12 +3,12 @@ const crypto = require("crypto");
 const { User,Blog }  = require('../db/db')
 const {Utils} = require('../utils/utils')
 
+
 class UserOperation {
 
     async register (ctx) {
          let query = ctx.request.query
          if(!query.phone || !query.password) ctx.error('缺少用户名或密码字段')
-
          try {
              let md5 = crypto.createHash("md5");
              query.password = await md5.update(query.password).digest("hex");
@@ -22,7 +22,6 @@ class UserOperation {
          }catch (e) {
              ctx.error(Utils.ErrorE(e))
          }
-
     }
     async login (ctx) {
         let query = ctx.request.query
@@ -48,6 +47,10 @@ class UserOperation {
        }catch (e) {
            ctx.error(Utils.ErrorE(e))
        }
+    }
+    async loginOut (ctx) {
+        ctx.session = null
+        ctx.success('已成功退出!', {})
     }
     async list (ctx) {
         console.log(ctx)

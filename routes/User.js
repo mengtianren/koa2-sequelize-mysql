@@ -13,5 +13,6 @@ router
     .get('/list',async ctx => await UserOperation.list(ctx))
     .get('/detail',async ctx => await UserOperation.detail(ctx))
     .post('/set',async ctx => await UserOperation.setUser(ctx))
+    .get('/loginout',async ctx => await UserOperation.loginOut(ctx))
 
 module.exports = router

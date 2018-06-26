@@ -1,6 +1,7 @@
 const { Blog, User }  = require('../db/db')
 const {Utils} = require('../utils/utils')
 
+
 class BlogOperation {
 
     async addBlog (ctx) {
@@ -37,6 +38,7 @@ class BlogOperation {
 
     }
     async detailBlog (ctx) {
+        console.log(ctx)
         let query = ctx.request.query
         if(!query.id) ctx.error('缺少id字段')
         console.log(query)

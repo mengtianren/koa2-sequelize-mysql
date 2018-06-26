@@ -12,10 +12,11 @@
     "babel-cli": "^6.26.0",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.1",
-    "koa-error": "^3.2.0",
     "koa-logger": "^3.2.0",
+    "koa-multer": "^1.0.2",
     "koa-router": "^7.4.0",
     "koa-session": "^5.8.1",
+    "koa-static": "^5.0.0",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.10"
   }
