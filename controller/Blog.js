@@ -31,7 +31,6 @@ class BlogOperation {
                 }
             })
             ctx.success('获取列表成功',list)
-
         }catch (e) {
             ctx.error(Utils.ErrorE(e))
         }
@@ -56,11 +55,7 @@ class BlogOperation {
         }catch (e) {
             ctx.error(Utils.ErrorE(e))
         }
-}
-
-
-
-
+    }
 }
 
 module.exports.BlogOperation = new BlogOperation()
